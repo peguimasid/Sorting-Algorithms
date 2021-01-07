@@ -4,7 +4,6 @@ function swap(array, index1, index2) {
   array[index2] = temp;
 }
 
-// MY SOLUTION
 function selectionSort(array) {
   for(let i = 0; i < array.length; i++) {
     let initialIndex = i;

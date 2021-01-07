@@ -4,7 +4,7 @@ function swap(array, index1, index2) {
   array[index2] = temp;
 }
 
-function sort(array) {
+function bubbleSort(array) {
   let noSwaps;
 
   for(let i = array.length; i > 0; i--) {
@@ -23,4 +23,4 @@ function sort(array) {
 }
 
 
-console.log(sort([9, 3, 2, -3, 5, 4, 6, 8, 7]))
+console.log(bubbleSort([9, 3, 2, -3, 5, 4, 6, 8, 7]))
