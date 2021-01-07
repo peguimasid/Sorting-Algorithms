@@ -5,11 +5,11 @@ function swap(array, index1, index2) {
 }
 
 // MY SOLUTION
-function pivot(array) {
+function pivot(array, start = 0, end = array.length - 1) {
   let result = 0
 
-  let pivotIndex = 0
-  let pivotSmallerItems = 0
+  let pivotIndex = start
+  let pivotSmallerItems = start
 
   for(let i = 0; i < array.length; i++) {
     if(array[i] < array[pivotIndex]) {
@@ -26,18 +26,18 @@ function pivot(array) {
 }
 
 // COLT'S SOLUTION
-function pivot(arr, start = 0){
-  var pivot = arr[start];
-  var swapIdx = start;
+// function pivot(arr, start = 0, end = arr.length - 1){
+//   var pivot = arr[start];
+//   var swapIdx = start;
 
-  for(var i = start + 1; i < arr.length; i++){
-    if(pivot > arr[i]){
-      swapIdx++;
-      swap(arr,swapIdx,i);
-    }
-  }
-  swap(arr,start,swapIdx);
-  return swapIdx;
-}
+//   for(var i = start + 1; i < arr.length; i++){
+//     if(pivot > arr[i]){
+//       swapIdx++;
+//       swap(arr,swapIdx,i);
+//     }
+//   }
+//   swap(arr,start,swapIdx);
+//   return swapIdx;
+// }
 
 console.log(pivot([9, 4, 8, 2, 1, 5, 7, 6, 3]))
