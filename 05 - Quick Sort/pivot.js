@@ -11,7 +11,7 @@ function pivot(array, start = 0, end = array.length - 1) {
   let pivotIndex = start
   let pivotSmallerItems = start
 
-  for(let i = 0; i < array.length; i++) {
+  for(let i = start + 1; i < array.length; i++) {
     if(array[i] < array[pivotIndex]) {
       pivotSmallerItems++
       swap(array, pivotSmallerItems, i)
