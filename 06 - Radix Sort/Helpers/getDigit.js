@@ -4,7 +4,7 @@ function getDigit(num, place) {
 
   const requestedDigit = parseInt(num[num.length - 1 - place])
 
-  return requestedDigit
+  return requestedDigit ? requestedDigit : 0
 }
 
 // COLT SOLUTION
@@ -12,4 +12,4 @@ function getDigit(num, place) {
   return Math.floor(Math.abs(num) / Math.pow(10, place) % 10)
 }
 
-console.log(getDigit(1923, 0))
+console.log(getDigit(1923, 2))
