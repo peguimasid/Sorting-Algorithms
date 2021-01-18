@@ -12,4 +12,4 @@ function getDigit(num, place) {
   return Math.floor(Math.abs(num) / Math.pow(10, place) % 10)
 }
 
-console.log(getDigit(1923, 2))
+console.log(getDigit(9, 2))
